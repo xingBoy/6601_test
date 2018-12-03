@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+"6601_test\startup_stm32f072xb.o"
+"6601_test\main.o"
+"6601_test\stm32f0xx_it.o"
+"6601_test\stm32f0xx_hal_msp.o"
+"6601_test\stm32f0xx_hal_i2c.o"
+"6601_test\stm32f0xx_hal_i2c_ex.o"
+"6601_test\stm32f0xx_hal_tim.o"
+"6601_test\stm32f0xx_hal_tim_ex.o"
+"6601_test\stm32f0xx_hal_uart.o"
+"6601_test\stm32f0xx_hal_uart_ex.o"
+"6601_test\stm32f0xx_hal_rcc.o"
+"6601_test\stm32f0xx_hal_rcc_ex.o"
+"6601_test\stm32f0xx_hal.o"
+"6601_test\stm32f0xx_hal_gpio.o"
+"6601_test\stm32f0xx_hal_dma.o"
+"6601_test\stm32f0xx_hal_cortex.o"
+"6601_test\stm32f0xx_hal_pwr.o"
+"6601_test\stm32f0xx_hal_pwr_ex.o"
+"6601_test\stm32f0xx_hal_flash.o"
+"6601_test\stm32f0xx_hal_flash_ex.o"
+"6601_test\system_stm32f0xx.o"
+"6601_test\tb_6601_test.o"
+"6601_test\usar_fputc.o"
+--library_type=microlib --strict --scatter "6601_test\6601_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "6601_test.map" -o 6601_test\6601_test.axf
